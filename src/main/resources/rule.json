@@ -1,0 +1,16 @@
+{
+  "rule": {
+    "fileName": {
+      "fileType": "false",
+      "fileDesc": "rule desc"
+    },
+    "_panel": "f"
+  },
+  "rule1": {
+    "fileName": {
+      "fileType": "true",
+      "fileDesc": "rule desc" 
+    },
+    "_panel": "crr"
+  }
+}
