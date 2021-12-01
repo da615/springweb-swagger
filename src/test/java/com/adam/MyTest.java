@@ -5,6 +5,10 @@ import jxl.Workbook;
 import jxl.read.biff.BiffException;
 
 import java.io.*;
+import java.util.List;
+import java.util.Map;
+import java.util.Queue;
+import java.util.concurrent.*;
 
 public class MyTest {
     public static void main(String[] args) {
@@ -12,6 +16,14 @@ public class MyTest {
         // 此处为我创建Excel路径：E:/zhanhj/studysrc/jxl下
         File file = new File("src/main/resources/rules/region/sieId/t1.xls");
         obj.readExcel(file);
+
+        Map map = new ConcurrentHashMap();
+        List list = new CopyOnWriteArrayList();
+        Queue queue = new ConcurrentLinkedDeque();
+        Map map1 = new ConcurrentSkipListMap();
+//        Executor executor = new ThreadPoolExecutor();
+
+
     }
     // 去读Excel的方法readExcel，该方法的入口参数为一个File对象
     public void readExcel(File file) {
